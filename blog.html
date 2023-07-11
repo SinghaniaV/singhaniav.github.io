@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <title>Vishal Singhania - Blog</title>
+    <meta name="description" content="Vishal's Blog">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKYZ8BVJW9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WKYZ8BVJW9');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans:400,400i" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/logo.svg">
+    <style type="text/css">
+html {
+  font-family: 'IBM Plex Sans',"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  background:#fff;
+  color:#222;
+  padding:15px
+}
+
+code {
+  font-family: 'IBM Plex Mono',monospace;
+}
+
+body {
+  text-align: justify;
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 20px 50px 20px;
+}
+
+a {text-decoration: none}
+a:link, a:visited {color: #FF5800;}
+a img{border:0}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0;
+  font-family: 'IBM Plex Mono',monospace;
+  font-weight: 400;
+  line-height: 130%;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+p { margin: 20px 0 20px 0; }
+
+li{display: inline}
+
+ins{color:#888;text-decoration:none}
+a {text-decoration: none}
+a:link, a:visited {color: #FF5800;}
+a img{border:0}
+    </style>
+  </head>
+
+  <body>
+    <ul class="connections" style="display: inline-block">
+      <li><a href="/">Home</a></li>
+      <li><ins>&nbsp;|&nbsp;</ins></li>
+      <li><a target="_blank" href="https://twitter.com/vishsinghania">Twitter &#x29c9;</a></li>
+      <li><ins>&nbsp;|&nbsp;</ins></li>
+      <li><a target="_blank" href="https://github.com/SinghaniaV">Github &#x29c9;</a></li>
+      <li><ins>&nbsp;|&nbsp;</ins></li>
+      <li><a target="_blank" href="https://linkedin.com/in/singhaniav">LinkedIn &#x29c9;</a></li>
+    </ul>
+
+    <h1 id="free">My Completed &amp; Ongoing Works</h1>
+    <hr/>
+    <h2>2023</h2>
+    <h4>Things I'm exploring - Machine learning, Compilers, Programming Language Design.</h4>
+    <hr/>
+
+    <h3>Can we solve wordle using math?</h3>
+    <h4>#probability</h4>
+    <h5><a href="https://github.com/SinghaniaV/wordle-app" target="blank">Github link &#x29c9;</a> (ongoing)
+    </h5>
+    <p>
+      By leveraging <b>Grant Sanderson’s</b> <a href="https://www.youtube.com/watch?v=v68zYyaEmEA" target="blank">entropy concept &#x29c9;</a>, developing an AI that utilizes a corpus of <b>13,000</b> five-letter words, which can solve any <a href="https://www.nytimes.com/games/wordle/index.html" target="blank">wordle &#x29c9;</a> game in no more than six attempts. 
+      The algorithm uses information theory & Probability to determine the optimal next word guess.<br/>
+
+      Meanwhile, I have implemented a terminal-based clone of wordle with six attempts to guess a five-letter word, providing color feedback for the player’s guesses.<br/>
+    </p>
+    <hr/>
+
+    <h3>Building a computer from first principles</h3>
+    <h4>#compilers #operarting_systems #computer_architecture</h4>
+    <h5><a href="https://github.com/SinghaniaV/nand2tetris" target="blank">Github link &#x29c9;</a> (ongoing)
+    </h5>
+    <p>
+       Following the guidelines at <a href="https://www.nand2tetris.org/" target="blank">Nand2Tetris &#x29c9;</a>, implementing a fully functional computer from scratch (<b>software hierarchy</b> + <b>hardware platform</b>).<br/>
+
+       The hardware platform involves implementing the elementary logic gates using
+       an <b>HDL</b>. Then, a <b>CPU</b>, and a <b>RAM</b> chip from combinational & sequential logic.<br/>
+
+       The software hierarchy involves implementing a <b>high-level language</b>, a
+       <b>compiler</b>, a <b>Virtual Machine translator</b> to translate the compiled code to
+       machine language, then an <b>assembler</b> to translate it to binary, and finally, a basic <b>operating system</b> that closes gaps between the high-level language and the underlying hardware platform.<br/>
+    </p>
+    <hr/>
+
+    <h3>An AI that answers queries on documents</h3>
+    <h4>#natural_language_processing</h4>
+    <h5><a href="https://github.com/SinghaniaV/CS50-intro-to-ai/tree/master/week6/questions" target="blank">Github link &#x29c9;</a></h5>
+    <p>
+      Built a question answering system similar to <a href="https://en.wikipedia.org/wiki/IBM_Watson" target="blank">IBM Watson &#x29c9;</a>. It operates on a corpus of text documents and aims to find the most relevant documents and passages to a given query.<br/>
+
+      For document retrieval, the system uses <b>tf-idf (term frequency-inverse document frequency)</b> to rank them based on the frequency of query terms and their overall importance in the corpus.<br/>
+
+      Passage retrieval is performed by subdividing the top document(s) into sentences. In scoring the passages, the system employs a combination of <b>inverse document frequency</b> and a <b>query term density</b> measure.<br/>
+    </p>
+    <hr/>
+
+    <h3>Implementing a Nim Strategist</h3>
+    <h4>#reinforcement_learning</h4>
+    <h5><a href="https://github.com/SinghaniaV/CS50-intro-to-ai/tree/master/week6/questions" target="blank">Github link &#x29c9;</a></h5>
+    <p>
+      <a href="https://en.wikipedia.org/wiki/Nim" target="blank">Nim &#x29c9;</a> is a game where players take turns removing objects from piles, and the player who removes the last object loses.<br/>
+
+      Developed an AI that gradually learns the optimal actions to take in different game states through <b>reinforcement learning</b>, specifically using <b>Q-learning</b> .<br/>
+
+      The Q-learning formula is used to update the Q-value for each (state, action) pair using the learning rate (alpha), which determines the weight given to new information, and the estimation of the current and future rewards.<br/>
+    </p>
+    <hr/>
+
+    <h3>How search engines rank pages?</h3>
+    <h4>#probability</h4>
+    <h5>
+      <a target="_blank" href="https://github.com/SinghaniaV/CS50-intro-to-ai/tree/master/week2/pagerank">Github link &#x29c9;</a>
+    </h5>
+
+    <p>
+      Larry Page, one of the founders of Google, introduced the <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank">PageRank algorithm &#x29c9;</a>, which was initially employed to determine the ranking of web pages within the <b>Google search</b> engine. PageRank works by counting the number and quality of links to a page to determine a rough estimate of how important the website is<br/>
+      
+      I implemented a simplified version of the PageRank algorithm by two methods - by sampling pages from a <b>Markov Chain</b> random surfer and by iteratively applying the PageRank formula, where a random surfer navigates the web by randomly clicking on links with a certain <b>probability</b> or making random jumps with the <b>complementary probability</b>.
+    </p>
+    <hr/>
+
+    <h3>Generating Crossword Puzzles using AI</h3>
+    <h4>#knowledge_representation</h4>
+    <h5>
+      <a target="_blank" href="https://github.com/SinghaniaV/CS50-intro-to-ai/tree/master/week3/crossword">Github link &#x29c9;</a>
+    </h5>
+
+    <p>
+      A <a target="_blank" href="https://en.wikipedia.org/wiki/Crossword"> crossword puzzle &#x29c9;</a> is represented as a grid with variables representing the words to be filled in. Each variable has properties such as its position, direction, and length.<br/>
+
+      Implemented an AI to generate a crossword puzzle by solving a <b>CSP (constraint satisfaction problem)</b>. The goal is to find a word from a given list of words that satisfies both unary constraints (word length) and binary constraints (overlaps with neighboring variables) using <b>AC-3 algorithm</b>. Additionally, the AI ensures that all words used in the puzzle are different.
+    </p>
+    <hr/>
+
+    <h3>AI that plays Minesweeper</h3>
+    <h4>#knowledge_representation</h4>
+    <h5>
+      <a target="_blank" href="https://github.com/SinghaniaV/CS50-intro-to-ai/tree/master/week1/minesweeper">Github link &#x29c9;</a>
+    </h5>
+
+    <p>
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Minesweeper_(video_game)">Minsweeper &#x29c9;</a> is a logic puzzle featuring a grid of clickable squares, with hidden mines scattered throughout the board. The objective is to clear the board without detonating any mines, with help from clues about the number of neighboring mines in each field.<br/>
+      
+      Developed an AI that plays Minesweeper like a human, using the <b>CSP (Constraint Satisfaction Problem)</b> algorithm. It creates constraints for each opened square and flagged mine, updating the knowledge base and resolving the equations accordingly.
+    </p>
+    <hr/>
+
+    <h2>2022</h2>
+    <h4>Things I explored - C/C++, Data Structures, Cryptography, Computer Networks, WebApps.</h4>
+    <hr/>
+
+    <h3>A mini simulation of the Stock Exchange</h3>
+    <h4>#databases #API</h4>
+    <h5><a target="_blank" href="https://github.com/SinghaniaV/Stock-Exchange">Github link &#x29c9;</a>
+    | <a target="_blank" href="https://stockex.onrender.com/">live &#x29c9;</a>
+    </h5>
+
+    <p>
+      A WebApp that enables authenticated users to trade stocks using simulated funds, access real-time stock quotes from the <b>Alpha Vantage API</b>, and view their portfolio’s transaction history.<br/>
+    </p>
+    <hr/>
+
+    <h3>Secure peer-to-peer messaging</h3>
+    <h4>#cryptography #computer_networks</h4>
+    <h5><a target="_blank" href="https://github.com/SinghaniaV/encrypted-chat">Github link &#x29c9;</a>
+    </h5>
+
+    <p>
+      A Python script that uses <a target="_blank" href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">RSA (Rivest Shamir Adleman) &#x29c9;</a>, a <b>public-key encryption</b> algorithm, to send and receive messages reliably over TCP.<br/>
+    </p>
+    
+    <hr/>
+  </body>
+</html>
